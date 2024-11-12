@@ -1,0 +1,24 @@
+POST http://localhost:8080/login HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "admin",
+    "password": "admin"
+}
+
+###
+
+GET http://localhost:8080/public HTTP/1.1
+
+###
+
+GET http://localhost:8080/protected HTTP/1.1
+Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE2OTcxMDg2NDksImlhdCI6MTY5NzEwNTA0OSwic2NvcGUiOiJVU0VSIEFETUlOIn0.iuD1EfVnaGT1P3QcJdcHCJ_4TfvV7k8ktwqbvvAtvFk6vMJbQdee4pIQ-7L4-EkyAL-PbXuP2sg6pJZGaKLQ-p7rwzaxsjGBtfqdOJzqUdC7WXPswp7zhx898hnSUGj9lJ4OnTbehEM8L4mzgwT02AZjrAoSId9rP4-_wekFCntjbT3eNTq4kq1jqyk9Zx5Mkl0BwvzXJWTutPbWVWDp5iR7P2PiFe-FWlL-5GtKjDPZ9hsDskJscvGe4P3YcYF_vZgumYqgsJiIVG9MHzsedzrEAtLkB7nvRytEWZH7jFFDJFfwtc-oFTZbV3E0tZPQdL-ys63kgrq09gnUKdHp1Q
+
+###
+
+GET http://localhost:8080/private HTTP/1.1
+Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE2OTcxMDg2NDksImlhdCI6MTY5NzEwNTA0OSwic2NvcGUiOiJVU0VSIEFETUlOIn0.iuD1EfVnaGT1P3QcJdcHCJ_4TfvV7k8ktwqbvvAtvFk6vMJbQdee4pIQ-7L4-EkyAL-PbXuP2sg6pJZGaKLQ-p7rwzaxsjGBtfqdOJzqUdC7WXPswp7zhx898hnSUGj9lJ4OnTbehEM8L4mzgwT02AZjrAoSId9rP4-_wekFCntjbT3eNTq4kq1jqyk9Zx5Mkl0BwvzXJWTutPbWVWDp5iR7P2PiFe-FWlL-5GtKjDPZ9hsDskJscvGe4P3YcYF_vZgumYqgsJiIVG9MHzsedzrEAtLkB7nvRytEWZH7jFFDJFfwtc-oFTZbV3E0tZPQdL-ys63kgrq09gnUKdHp1Q
+
+###
